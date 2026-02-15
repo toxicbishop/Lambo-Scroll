@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Experience the future of automotive excellence. Assemble the Future — a revolutionary electric supercar built with precision engineering, smart aerodynamics, and breathtaking performance.">
-  <title>VECTRIS — Assemble the Future</title>
+    content="Vectris — Precision electric supercar engineering. High performance, smart aerodynamics, and sustainable power.">
+  <title>Vectris | Electric Performance Architecture</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
@@ -16,9 +16,13 @@
 
   <!-- ========== LOADING OVERLAY ========== -->
   <div class="loader" id="loader">
-    <div class="loader-ring"></div>
-    <p class="loader-label">Initializing Experience</p>
-    <p class="loader-pct" id="loader-pct">0%</p>
+    <div class="loader-bar-bg">
+      <div class="loader-bar-fill" id="loader-bar"></div>
+    </div>
+    <div class="loader-text-row">
+      <p class="loader-label">System Check</p>
+      <p class="loader-label" id="loader-pct">0%</p>
+    </div>
   </div>
 
   <!-- ========== FULLSCREEN SCROLL INTRO ========== -->
@@ -26,11 +30,8 @@
     <div class="intro-sticky">
       <canvas id="intro-canvas"></canvas>
       <div class="intro-overlay" id="intro-overlay">
-        <h1 class="intro-title">Scroll to Assemble</h1>
-        <p class="intro-sub">Precision Engineering in Motion</p>
-        <div class="intro-scroll-hint">
-          <span class="intro-chevron"></span>
-        </div>
+        <h1 class="intro-title">Vectris Component Assembly</h1>
+        <p class="intro-sub">Schematic Visualization</p>
       </div>
     </div>
   </section>
@@ -40,12 +41,12 @@
     <div class="container">
       <a href="#" class="nav-brand">VECTRIS</a>
       <div class="nav-links" id="nav-links">
-        <a href="#features">Features</a>
-        <a href="#specs">Specs</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#testimonials">Reviews</a>
-        <button class="nav-cta" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Reserve
-          Now</button>
+        <a href="#features">Engineering</a>
+        <a href="#specs">Specifications</a>
+        <a href="#gallery">Visuals</a>
+        <a href="#testimonials">Analysis</a>
+        <button class="btn btn-primary"
+          onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Pre-Order</button>
       </div>
       <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -57,20 +58,17 @@
   <section class="section hero" id="hero">
     <div class="container">
       <div class="hero-inner fade-in">
-        <span class="hero-tag"><span class="tag-dot"></span> Next Generation EV</span>
-        <h1 class="hero-title">Assemble the <span class="gradient-text">Future</span></h1>
-        <p class="hero-subtitle">Where visionary design meets relentless performance. An electric hypercar sculpted from
-          obsession.</p>
+        <span class="hero-tag">Model X-1 Prototype</span>
+        <h1 class="hero-title">Precision Electric <br>Architecture</h1>
+        <p class="hero-subtitle">Engineered for zero-latency response and maximum aerodynamic efficiency. The next
+          evolution in automotive design.</p>
         <div class="hero-buttons">
-          <button class="btn-primary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
-            Explore Models
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg>
+          <button class="btn btn-primary"
+            onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+            Technical Details
           </button>
-          <button class="btn-secondary"
-            onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Book a Test Drive</button>
+          <button class="btn btn-secondary"
+            onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Request Data Sheet</button>
         </div>
       </div>
     </div>
@@ -80,10 +78,8 @@
   <section class="section features" id="features">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-tag">Innovation</span>
-        <h2 class="section-title">Engineered Beyond Limits</h2>
-        <p class="section-desc">Every detail crafted to redefine what a supercar can be — from the molecular level up.
-        </p>
+        <h2 class="section-title">Core Technologies</h2>
+        <p class="section-desc">Fundamental systems designed for performance and reliability.</p>
       </div>
       <div class="features-grid fade-in-stagger">
         <div class="feature-card">
@@ -95,9 +91,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
             </svg>
           </div>
-          <h3>Precision Engineering</h3>
-          <p>Machined to tolerances of 0.001 mm. Every component is a masterpiece of computational design and
-            aerospace-grade manufacturing.</p>
+          <h3>Advanced Manufacturing</h3>
+          <p>Components machined to micron-level tolerances using aerospace-grade composite materials.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -107,9 +102,8 @@
                 d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
             </svg>
           </div>
-          <h3>Smart Aerodynamics</h3>
-          <p>AI-adaptive bodywork responds in real-time to driving conditions. Active aero surfaces shift 200 times per
-            second for perfect downforce.</p>
+          <h3>Adaptive Aerodynamics</h3>
+          <p>Active surfaces adjust in real-time to optimize drag coefficients and downforce.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -119,9 +113,8 @@
                 d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M3.75 18h15A2.25 2.25 0 0 0 21 15.75v-6a2.25 2.25 0 0 0-2.25-2.25h-15A2.25 2.25 0 0 0 1.5 9.75v6A2.25 2.25 0 0 0 3.75 18Z" />
             </svg>
           </div>
-          <h3>Electric Performance</h3>
-          <p>Quad-motor all-wheel drive delivering instant torque. Solid-state battery for unprecedented range and
-            lightning-fast charging.</p>
+          <h3>Powertrain Efficiency</h3>
+          <p>Quad-motor architecture delivering high-density output with solid-state energy storage.</p>
         </div>
       </div>
     </div>
@@ -131,10 +124,8 @@
   <section class="section specs" id="specs">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-tag">Performance</span>
-        <h2 class="section-title">Numbers That Speak</h2>
-        <p class="section-desc">Raw performance figures that place Vectris at the pinnacle of electric hypercar
-          engineering.</p>
+        <h2 class="section-title">Technical Specifications</h2>
+        <p class="section-desc">Verified performance metrics.</p>
       </div>
       <div class="specs-grid fade-in-stagger">
         <div class="spec-card">
@@ -143,7 +134,7 @@
         </div>
         <div class="spec-card">
           <div class="spec-value">620 km</div>
-          <div class="spec-label">Range</div>
+          <div class="spec-label">Range (WLTP)</div>
         </div>
         <div class="spec-card">
           <div class="spec-value">340 km/h</div>
@@ -151,7 +142,7 @@
         </div>
         <div class="spec-card">
           <div class="spec-value">950 HP</div>
-          <div class="spec-label">Power Output</div>
+          <div class="spec-label">Peak Power</div>
         </div>
       </div>
     </div>
@@ -161,20 +152,18 @@
   <section class="section gallery" id="gallery">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-tag">Gallery</span>
-        <h2 class="section-title">See It. Feel It.</h2>
-        <p class="section-desc">Beauty captured from every angle. Each frame tells a story of obsession with perfection.
-        </p>
+        <h2 class="section-title">Assembly Details</h2>
+        <p class="section-desc">Documentation of the build process.</p>
       </div>
       <div class="gallery-grid fade-in-stagger">
-        <div class="gallery-item"><img src="images/ezgif-frame-001.jpg" alt="Assembly start"><span
-            class="gallery-caption">Genesis</span></div>
-        <div class="gallery-item"><img src="images/ezgif-frame-070.jpg" alt="Mid assembly"><span
-            class="gallery-caption">Skeleton</span></div>
-        <div class="gallery-item"><img src="images/ezgif-frame-140.jpg" alt="Near complete"><span
-            class="gallery-caption">Form</span></div>
-        <div class="gallery-item"><img src="images/ezgif-frame-210.jpg" alt="Fully assembled"><span
-            class="gallery-caption">Complete</span></div>
+        <div class="gallery-item"><img src="images/ezgif-frame-001.jpg" alt="Chassis"><span
+            class="gallery-caption">Phase 1: Chassis</span></div>
+        <div class="gallery-item"><img src="images/ezgif-frame-070.jpg" alt="Frame"><span class="gallery-caption">Phase
+            2: Frame</span></div>
+        <div class="gallery-item"><img src="images/ezgif-frame-140.jpg" alt="Body"><span class="gallery-caption">Phase
+            3: Body</span></div>
+        <div class="gallery-item"><img src="images/ezgif-frame-210.jpg" alt="Final"><span class="gallery-caption">Phase
+            4: Integration</span></div>
       </div>
     </div>
   </section>
@@ -183,41 +172,34 @@
   <section class="section testimonials" id="testimonials">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-tag">Reviews</span>
-        <h2 class="section-title">What Visionaries Say</h2>
-        <p class="section-desc">First impressions from those who have experienced the future firsthand.</p>
+        <h2 class="section-title">Independent Validation</h2>
+        <p class="section-desc">Reports from automotive analysts.</p>
       </div>
       <div class="testimonials-grid fade-in-stagger">
         <div class="testimonial-card">
-          <div class="t-stars">★★★★★</div>
-          <blockquote>"The Vectris redefined my understanding of what an electric car can be. The acceleration is
-            violent, the silence is eerie, the design otherworldly."</blockquote>
+          <blockquote>"The lateral G-forces and instant torque response set a new benchmark for the segment."
+          </blockquote>
           <div class="t-author">
-            <div class="t-avatar">JC</div>
             <div>
-              <h4>James Chen</h4><span>Automotive Journalist, Apex Magazine</span>
+              <h4>James Chen</h4><span>Automotive Analyst</span>
             </div>
           </div>
         </div>
         <div class="testimonial-card">
-          <div class="t-stars">★★★★★</div>
-          <blockquote>"I've driven every hypercar on the market. The Vectris is the only one that made me question
-            everything I knew about automotive engineering."</blockquote>
+          <blockquote>"Engineering precision is evident in every seam. The chassis rigidity provides exceptional
+            feedback."</blockquote>
           <div class="t-author">
-            <div class="t-avatar">SR</div>
             <div>
-              <h4>Sophia Romano</h4><span>Professional Racing Driver</span>
+              <h4>Sophia Romano</h4><span>Test Pilot</span>
             </div>
           </div>
         </div>
         <div class="testimonial-card">
-          <div class="t-stars">★★★★★</div>
-          <blockquote>"Not just a car — it's a statement. The craftsmanship, the technology, the sheer presence. Vectris
-            transcends transportation."</blockquote>
+          <blockquote>"A masterclass in thermal management and battery efficiency. Truly next-generation hardware."
+          </blockquote>
           <div class="t-author">
-            <div class="t-avatar">AK</div>
             <div>
-              <h4>Alexander König</h4><span>CEO, König Ventures</span>
+              <h4>Alexander König</h4><span>Engineering Lead</span>
             </div>
           </div>
         </div>
@@ -229,14 +211,10 @@
   <section class="section cta" id="cta">
     <div class="container">
       <div class="cta-content fade-in">
-        <h2>Ready to Experience the <span class="gradient-text">Future</span>?</h2>
-        <p>Join an exclusive circle of visionaries. Limited production. Unlimited ambition.</p>
-        <button class="btn-primary">
-          Reserve Now
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-          </svg>
+        <h2>Reserve Allocation</h2>
+        <p>Limited production slots available for the 2026 model year.</p>
+        <button class="btn btn-primary">
+          Begin Configuration
         </button>
       </div>
     </div>
@@ -245,31 +223,14 @@
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container">
-      <a href="#" class="footer-brand">VECTRIS</a>
-      <span class="footer-copy">&copy; 2026 Vectris Motors. All rights reserved.</span>
+      <a href="#" class="nav-brand">VECTRIS</a>
+      <span class="footer-copy">© 2026 Vectris Motors. All rights reserved.</span>
       <div class="footer-socials">
-        <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
             <path
               d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-          </svg></a>
-        <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-          </svg></a>
-        <a href="#" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path
-              d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" />
-            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
-          </svg></a>
-        <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-            <rect x="2" y="9" width="4" height="12" />
-            <circle cx="4" cy="4" r="2" />
           </svg></a>
       </div>
     </div>
